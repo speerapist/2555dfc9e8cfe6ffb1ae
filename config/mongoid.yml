@@ -1,0 +1,21 @@
+development:
+  clients:
+    default:
+      database: robot_simulation_app_development
+      hosts:
+        - localhost:27017
+      options:
+       )
+  options:
+
+
+test:
+  clients:
+    default:
+      database: robot_simulation_app_test
+      hosts:
+        - localhost:27017
+      options:
+        read:
+          mode: :primary
+        max_pool_size: 1
